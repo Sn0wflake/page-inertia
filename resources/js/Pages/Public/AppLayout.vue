@@ -133,7 +133,7 @@
                         <p>PVN Reģ.Nr:LV42103111904</p>
                         <p>Mārupes nov., Mārupe, Pētera iela 18, LV-2167</p>
                         <p>Citadele bank</p>
-                        <p>LV96ZZZ42103111904</p>
+                        <p>LV85PARX0023322910002</p>
                     </div>
 
                     <!-- Working Hours -->
