@@ -11,12 +11,32 @@
                     <!-- Main Navigation -->
                     <div class="hidden md:flex space-x-8">
                         <a
-                            v-for="item in navigation"
-                            :key="item.route"
-                            :href="item.route"
+                            :href="route('home')"
                             class="text-white hover:text-gray-200 px-3 py-2 text-lg font-medium"
+                            @click="closeMobileMenu"
                         >
-                            {{ item.label }}
+                            {{ $t('messages.home') }}
+                        </a>
+                        <a
+                            :href="route('services')"
+                            class="text-white hover:text-gray-200 px-3 py-2 text-lg font-medium"
+                            @click="closeMobileMenu"
+                        >
+                            {{ $t('messages.services') }}
+                        </a>
+                        <a
+                            :href="route('about')"
+                            class="text-white hover:text-gray-200 px-3 py-2 text-lg font-medium"
+                            @click="closeMobileMenu"
+                        >
+                            {{ $t('messages.about_us') }}
+                        </a>
+                        <a
+                            :href="route('contact')"
+                            class="text-white hover:text-gray-200 px-3 py-2 text-lg font-medium"
+                            @click="closeMobileMenu"
+                        >
+                            {{$t('messages.contacts')}}
                         </a>
                     </div>
 
@@ -53,13 +73,32 @@
                 <div class="md:hidden" :class="{ hidden: !isMobileMenuOpen }">
                     <div class="px-2 pt-2 pb-3 space-y-1">
                         <a
-                            v-for="item in navigation"
-                            :key="item.route"
-                            :href="item.route"
+                            :href="route('home')"
                             class="text-white hover:text-gray-200 block px-3 py-2 text-base font-medium"
                             @click="closeMobileMenu"
                         >
-                            {{ item.label }}
+                            {{ $t('messages.home') }}
+                        </a>
+                        <a
+                            :href="route('services')"
+                            class="text-white hover:text-gray-200 block px-3 py-2 text-base font-medium"
+                            @click="closeMobileMenu"
+                        >
+                            {{ $t('messages.services') }}
+                        </a>
+                        <a
+                            :href="route('about')"
+                            class="text-white hover:text-gray-200 block px-3 py-2 text-base font-medium"
+                            @click="closeMobileMenu"
+                        >
+                            {{ $t('messages.about_us') }}
+                        </a>
+                        <a
+                            :href="route('contact')"
+                            class="text-white hover:text-gray-200 block px-3 py-2 text-base font-medium"
+                            @click="closeMobileMenu"
+                        >
+                            {{$t('messages.contacts')}}
                         </a>
                     </div>
                 </div>
@@ -117,12 +156,6 @@ export default {
     data() {
         return {
             isMobileMenuOpen: false,
-            navigation: [
-                { route: '/', label: 'Home' },
-                { route: '/services', label: 'Services' },
-                { route: '/about', label: 'About Us' },
-                { route: '/contact', label: 'Contact' }
-            ],
             languageSwitch: useForm({
                 language: this.$page.props.locale
             })

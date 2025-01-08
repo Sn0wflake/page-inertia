@@ -25,17 +25,9 @@ class SetLocale
      */
     public function handle(Request $request, Closure $next): Response
     {
-        $locale = Session::get('locale', config('app.locale'));
-
-        if (in_array($locale, $this->supportedLanguages)) {
-            App::setLocale($locale);
-        } else {
-            App::setLocale(config('app.locale'));
-        }
-
         // Share the current locale with all Vue components
         Inertia::share([
-            'locale' => App::getLocale(),
+            'locale' => Session::get('locale'),
             'languages' => $this->supportedLanguages
         ]);
 
