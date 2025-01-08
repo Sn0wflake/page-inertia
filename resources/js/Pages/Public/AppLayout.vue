@@ -119,7 +119,7 @@
 
                     <!-- Contact Info -->
                     <div>
-                        <h3 class="font-bold mb-4">Contacts</h3>
+                        <h3 class="font-bold mb-4">{{$t('messages.contacts')}}</h3>
                         <p>(+371) 297 745 71</p>
                         <p>(+49) 1512 0273 586</p>
                         <p>info@personallosungen.eu</p>
@@ -138,9 +138,9 @@
 
                     <!-- Working Hours -->
                     <div>
-                        <h3 class="font-bold mb-4">Working Hours</h3>
-                        <p>Mon - Fri: 9:00 - 18:00</p>
-                        <p>Sat - Sun: Closed</p>
+                        <h3 class="font-bold mb-4">{{$t('messages.working_hours')}}</h3>
+                        <p>{{$t('messages.working_time')}}</p>
+                        <p>{{$t('messages.weekend_working_time')}}</p>
                     </div>
                 </div>
             </div>

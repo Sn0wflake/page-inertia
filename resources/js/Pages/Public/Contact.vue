@@ -119,12 +119,12 @@
                             <p class="text-xl mb-2">No {{ licenseInfo.number }}</p>
                             <p class="text-xl mb-6">Issued {{ licenseInfo.issueDate }}</p>
 
-                            <Link
-                                :href="route('license.pdf', { id: 1 })"
+                            <a
+                                href="license.pdf"
                                 class="inline-flex items-center px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-700 transition-colors"
                             >
                                 <span>{{ $t('messages.licence_pdf') }}</span>
-                            </Link>
+                            </a>
                         </div>
                     </div>
                 </div>

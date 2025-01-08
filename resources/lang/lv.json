@@ -8,7 +8,7 @@
         "contact": "Kontakts",
         "contact_us": "Sazinies ar mums",
         "location": "Atrašanās vieta",
-        "working_hours": "Darba laiks",
+        "working_hours": "Darba laiks:",
         "working_time": "Pirmdiena - Piektdiena: 9:00 - 17:00",
         "weekend_working_time": "Sestdiena - Svētdiena: slēgts",
         "title": "Konvir Ehitus sniedz profesionālus nodarbinātības un personāla atlases pakalpojumus",
@@ -44,6 +44,18 @@
         "join_text": "Konvir Ehitus jūsu panākumi ir mūsu prioritāte. Pievienojieties mums un izmantojiet mūsu pieredzi, resursus un apņemšanos nodrošināt jūsu apmierinātību ar darbu. Mēs palīdzēsim jums atrast darbu, kas ne tikai atbilst jūsu prasmēm, bet arī motivē jūs. Ar Konvir Ehitus jūs ne tikai atradīsiet darbu; jūs atradīsiet vietu, kur varat strādāt ar lepnumu un pārliecību.",
         "contacts3": "SAZINIES AR MUMS",
         "at": "Konvir Ehitus mēs esam apņēmušies sniegt profesionālus nodarbinātības un personāla atlases pakalpojumus, kas savieno uzņēmumus.",
-        "at_text": "KONVIR EHITUS piedāvā pilnu personāla atlases konsultāciju pakalpojumu klāstu, sākot no sākotnējās darba meklēšanas un kandidātu atlases līdz galīgajai izvietošanai un turpmākajam atbalstam. Mūsu visaptverošais atbalsts ietver darba legalizāciju un palīdzību uzturēšanās atļaujas saņemšanā, nodrošinot vienmērīgu un bezrūpīgu procesu gan darba meklētājiem, gan darba devējiem."
+        "at_text": "KONVIR EHITUS piedāvā pilnu personāla atlases konsultāciju pakalpojumu klāstu, sākot no sākotnējās darba meklēšanas un kandidātu atlases līdz galīgajai izvietošanai un turpmākajam atbalstam. Mūsu visaptverošais atbalsts ietver darba legalizāciju un palīdzību uzturēšanās atļaujas saņemšanā, nodrošinot vienmērīgu un bezrūpīgu procesu gan darba meklētājiem, gan darba devējiem.",
+        "our_recruitment":"",
+        "our_leasing": "",
+        "our_staffing":"",
+        "at_at":"",
+        "working_hours2": "Darba laiks:",
+        "requisites": "",
+        "licence": "Licence",
+        "licence_pdf": "Lincece.pdf",
+        "leasing": "Līzings",
+        "leasing_text": "Mūsu darbinieku līzings pakalpojumi uzņēmumiem ļauj pielāgot darbaspēka apjomu saskaņā ar to vajadzībām.",
+        "advantages": "Priekšrocības",
+        "advatages_text": "Personāla atlases pakalpojumi optimizē nolīgšanas procesu, uzņēmumam taupot vērtīgu laiku, meklējot kandidātus, tos izvērtējot un veicot intervijas."
     }
 }
