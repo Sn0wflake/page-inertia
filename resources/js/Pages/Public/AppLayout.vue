@@ -1,4 +1,3 @@
-# /resources/js/Layouts/AppLayout.vue
 <template>
     <div class="bg-white">
         <nav class="bg-gray-900">
@@ -23,19 +22,18 @@
 
                     <!-- Language Switcher -->
                     <div class="flex items-center relative">
-                        <form action="/language/switch" method="POST" class="flex items-center">
-                            <input type="hidden" name="_token" :value="csrfToken">
+                        <div class="flex items-center">
                             <select
-                                name="locale"
+                                v-model="languageSwitch.language"
                                 @change="submitForm"
                                 class="bg-transparent text-white border border-white rounded px-2 py-1 text-sm focus:outline-none appearance-none pr-8 cursor-pointer"
                             >
-                                <option value="en" :selected="currentLocale === 'en'">EN</option>
-                                <option value="ru" :selected="currentLocale === 'ru'">RU</option>
-                                <option value="lv" :selected="currentLocale === 'lv'">LV</option>
-                                <option value="de" :selected="currentLocale === 'de'">DE</option>
+                                <option value="en">EN</option>
+                                <option value="ru">RU</option>
+                                <option value="lv">LV</option>
+                                <option value="de">DE</option>
                             </select>
-                        </form>
+                        </div>
                     </div>
 
                     <!-- Mobile menu button -->
@@ -112,18 +110,22 @@
 </template>
 
 <script>
+import {useForm} from "@inertiajs/vue3";
+
 export default {
+    name: 'AppLayout',
     data() {
         return {
             isMobileMenuOpen: false,
-            currentLocale: document.documentElement.lang || 'en',
-            csrfToken: document.querySelector('meta[name="csrf-token"]')?.content,
             navigation: [
-                { route: '/home', label: 'Home' },
+                { route: '/', label: 'Home' },
                 { route: '/services', label: 'Services' },
                 { route: '/about', label: 'About Us' },
                 { route: '/contact', label: 'Contact' }
-            ]
+            ],
+            languageSwitch: useForm({
+                language: this.$page.props.locale
+            })
         }
     },
     methods: {
@@ -133,8 +135,11 @@ export default {
         closeMobileMenu() {
             this.isMobileMenuOpen = false
         },
-        submitForm(event) {
-            event.target.closest('form').submit()
+        submitForm() {
+            this.$i18n.locale = this.languageSwitch.language; // Update the current locale
+            localStorage.setItem('locale', this.languageSwitch.language);
+
+            this.languageSwitch.post(route('language.switch'))
         }
     }
 }

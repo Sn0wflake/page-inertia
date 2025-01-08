@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 
 class LanguageController extends Controller
 {
@@ -12,7 +13,7 @@ class LanguageController extends Controller
             'locale' => ['required', 'string', 'in:en,ru,lv,de'],
         ]);
 
-        session()->put('locale', $validated['locale']);
+        App::setLocale($validated['locale']);
 
         return redirect()->back();
     }
