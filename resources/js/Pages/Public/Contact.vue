@@ -83,7 +83,7 @@
                                 <p>Reg.nr.: 42103111904</p>
                                 <p>PVN Reg.Nr.LV42103111904</p>
                                 <p>Citadele bank</p>
-                                <p>LV96ZZZ42103111904</p>
+                                <p>LV85PARX0023322910002</p>
                             </div>
                         </div>
                     </div>

@@ -11,8 +11,8 @@ class ContactController extends Controller
     {
         return Inertia::render('Public/Contact', [
             'licenseInfo' => [
-                'number' => '123456',  // Replace with actual license number
-                'issueDate' => '2024-01-01'  // Replace with actual issue date
+                'number' => '80/2024',  // Replace with actual license number
+                'issueDate' => '25-11-2024'  // Replace with actual issue date
             ]
         ]);
     }
