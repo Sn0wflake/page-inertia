@@ -29,7 +29,7 @@
                             </p>
                         </div>
                         <div>
-                            <img :src="getAssetUrl('images/konvirehitus-circle-logo.png')" alt="LTRK Logo" class="w-48" />
+                            <img :src="getAssetUrl('images/konvirehitus-circle-logo.PNG')" alt="LTRK Logo" class="w-48" />
                         </div>
                     </div>
                 </div>
