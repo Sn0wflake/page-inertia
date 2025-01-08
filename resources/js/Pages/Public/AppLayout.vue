@@ -5,7 +5,7 @@
                 <div class="flex justify-between items-center h-16">
                     <!-- Logo -->
                     <div class="flex-shrink-0 flex items-center">
-                        <img :src="'/images/konvirehitus-logo.png'" alt="Convir Ehitus Logo" class="h-12" />
+                        <img :src="'/images/konvirehitus-logo.PNG'" alt="Convir Ehitus Logo" class="h-12" />
                     </div>
 
                     <!-- Main Navigation -->
@@ -114,7 +114,7 @@
                 <div class="grid md:grid-cols-4 gap-8">
                     <!-- Logo -->
                     <div>
-                        <img :src="'/images/konvirehitus-circle-logo.png'" alt="Convir Ehitus Logo" class="h-24 mb-8" />
+                        <img :src="'/images/konvirehitus-circle-logo.PNG'" alt="Convir Ehitus Logo" class="h-24 mb-8" />
                     </div>
 
                     <!-- Contact Info -->
